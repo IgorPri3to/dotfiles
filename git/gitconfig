@@ -88,3 +88,6 @@
     rebase = false
 [init]
     defaultBranch = main
+[user]
+	email = ipechepare@gmail.com
+	name = Igor Prieto
