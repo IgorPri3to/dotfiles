@@ -28,6 +28,13 @@ local use = require('packer').use
 use('wbthomason/packer.nvim') -- Let packer manage itself
 
 use({
+  "williamboman/nvim-lsp-installer",
+  config = function()
+    require('user.plugins.lsp-installer')
+  end,
+})
+
+use({
   'airblade/vim-rooter',
   setup = function()
     vim.g.rooter_manual_only = 1

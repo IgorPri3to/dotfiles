@@ -56,7 +56,7 @@
 [color]
     ui = auto
 [commit]
-    gpgsign = true
+	gpgsign = true
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
@@ -91,3 +91,4 @@
 [user]
 	email = ipechepare@gmail.com
 	name = Igor Prieto
+	signingkey = 2325532A8E17686B

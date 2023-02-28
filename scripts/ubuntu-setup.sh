@@ -31,6 +31,7 @@ sudo apt install -y \
     php-pgsql \
     php-posix \
     php-soap \
+    php-xml \
 #    docker-ce \
     docker-ce-cli \
 #    containerd.io \
@@ -48,7 +49,9 @@ sudo apt install -y \
 #    discord \
     slack \
     ruby \
-    luarocks
+    luarocks \
+    curl \
+    php-curl
 
 sudo gem install lolcat
 
