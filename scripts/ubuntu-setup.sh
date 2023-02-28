@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
-sudo apt install wget 
+sudo apt install -y \
+    wget \
+    gpg
 
 wget -qO - https://regolith-desktop.org/regolith.key | \
 gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
