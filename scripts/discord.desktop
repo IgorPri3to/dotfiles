@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Discord
+Exec=/snap/bin/discord
+Icon=discord
+Terminal=false
+Type=Application

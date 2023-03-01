@@ -352,6 +352,10 @@ use({
   end,
 })
 
+use('neoclide/coc.nvim')
+
+use('OmniSharp/omnisharp-vim')
+
 -- Automatically install plugins on first run
 if packer_bootstrap then
   require('packer').sync()

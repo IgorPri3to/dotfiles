@@ -1,11 +1,5 @@
 #!/usr/bin/env sh
 
-apt update
-apt install sudo
-adduser igorpri3to
-usermod -aG sudo igorpri3to
-su igorpri3to
-
 sudo apt install -y \
     wget \
     gpg
@@ -54,7 +48,8 @@ sudo apt install -y \
     curl \
     php-curl \
     ca-certificates \
-    lsb-release
+    lsb-release \
+    snapd
 
 sudo mkdir -m 0755 -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -92,6 +87,10 @@ sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
 sudo systemctl start docker
+
+sudo snap install discord
+sudo mv discord.desktop /usr/share/applications/
+sudo chmod +x /usr/share/applications/discord.desktop
 
 echo "Don't forget to copy over your .ssh and .gnupg directories!"
 
