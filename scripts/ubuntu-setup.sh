@@ -95,4 +95,6 @@ sudo systemctl start docker
 
 echo "Don't forget to copy over your .ssh and .gnupg directories!"
 
+sudo mv /dotfiles/ /home/igorpri3to/
+
 sudo reboot
